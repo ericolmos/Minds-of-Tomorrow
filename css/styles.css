@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Style the header */
+
+.header {
+    background-image: url('../img/banner-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10% 20px;
+    text-align: center;
+    color: black;
+}
+
+.header h1 {
+    font-size: 60px;
+}
+
+.header p {
+    font-size: 40px;
+}
+
+
+/* Create three equal columns that floats next to each other */
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 20px 20%;
+}
+
+.one-column h1,
+.one-column h2 {
+    text-align: center;
+}
+
+#cadetblue {
+    background-color: cadetblue;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.two-column {
+    padding: 20px;
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+
+/*Image Gallery*/
+
+.three-column {
+    padding: 20px;
+    float: left;
+    width: 33.33%;
+}
+
+.three-column img {
+    width: 100%;
+}
+
+.three-column desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* four-column */
+
+.four-column {
+    padding: 20px;
+    float: left;
+    width: 25%;
+}
+
+
+/*FOOTER*/
+
+#footer-a {
+    background-color: #21252995;
+}
+
+#footer-a p {
+    color: white;
+}
+
+#footer-b {
+    color: #868e96;
+    text-align: center;
+    background-color: #212529;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width:600px) {
+    .two-column,
+    .three-column,
+    .four-column {
+        width: 100%;
+    }
+    .header {
+        background-image: url('../img/pexels-pixabay-316093.jpg');
+    }
+}
